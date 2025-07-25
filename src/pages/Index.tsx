@@ -75,6 +75,13 @@ export default function Index() {
               Всего 1,5 метра от участка до береговой линии — с прямым выходом к морю.
             </p>
             
+            <div className="mb-8">
+              <div className="text-3xl md:text-4xl font-bold text-[#D4AF37] mb-2">
+                7 000 000 ₽
+              </div>
+              <p className="text-lg opacity-80">Стоимость участка</p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button 
                 size="lg" 
@@ -429,8 +436,8 @@ export default function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
               <Icon name="FileText" size={48} className="text-[#D4AF37] mx-auto mb-4" />
-              <h3 className="font-semibold text-[#2C5F41] mb-2">Свидетельство о собственности</h3>
-              <p className="text-gray-600 text-sm mb-4">Документ, подтверждающий право собственности</p>
+              <h3 className="font-semibold text-[#2C5F41] mb-2">ЕГРН</h3>
+              <p className="text-gray-600 text-sm mb-4">Выписка из Единого государственного реестра недвижимости</p>
               <Button variant="outline" className="w-full" onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/documents/ownership.pdf';
@@ -444,8 +451,8 @@ export default function Index() {
 
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
               <Icon name="Map" size={48} className="text-[#D4AF37] mx-auto mb-4" />
-              <h3 className="font-semibold text-[#2C5F41] mb-2">Кадастровый план</h3>
-              <p className="text-gray-600 text-sm mb-4">Точные границы и характеристики участка</p>
+              <h3 className="font-semibold text-[#2C5F41] mb-2">ГПЗУ</h3>
+              <p className="text-gray-600 text-sm mb-4">Градостроительный план земельного участка</p>
               <Button variant="outline" className="w-full" onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/documents/cadastral.pdf';
@@ -459,8 +466,8 @@ export default function Index() {
 
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
               <Icon name="Building" size={48} className="text-[#D4AF37] mx-auto mb-4" />
-              <h3 className="font-semibold text-[#2C5F41] mb-2">Разрешение на строительство</h3>
-              <p className="text-gray-600 text-sm mb-4">Возможности застройки участка</p>
+              <h3 className="font-semibold text-[#2C5F41] mb-2">Краткие данные о 6 сотках</h3>
+              <p className="text-gray-600 text-sm mb-4">Подробная информация об участке и его характеристиках</p>
               <Button variant="outline" className="w-full" onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/documents/building-permit.pdf';
@@ -493,11 +500,11 @@ export default function Index() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Icon name="Phone" className="mr-3 text-[#D4AF37]" size={20} />
-                  <span>+7 (XXX) XXX-XX-XX</span>
+                  <span>+7 (931) 350-75-48</span>
                 </div>
                 <div className="flex items-center">
                   <Icon name="Mail" className="mr-3 text-[#D4AF37]" size={20} />
-                  <span>info@sealand-crimea.ru</span>
+                  <span>il.shinemaria@gmail.com</span>
                 </div>
                 <div className="flex items-start">
                   <Icon name="MapPin" className="mr-3 text-[#D4AF37] mt-1" size={20} />
@@ -655,8 +662,8 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-gray-300">
-                <p>+7 (XXX) XXX-XX-XX</p>
-                <p>info@sealand-crimea.ru</p>
+                <p>+7 (931) 350-75-48</p>
+                <p>il.shinemaria@gmail.com</p>
                 <p>Крым, бухта Булганак</p>
               </div>
             </div>
