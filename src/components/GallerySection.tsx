@@ -78,10 +78,25 @@ export default function GallerySection() {
             <div className="mt-8">
               <Card className="p-6">
                 <h3 className="text-xl font-semibold text-[#2C5F41] mb-4">Видео-презентация участка</h3>
-                <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Icon name="Play" size={64} className="text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-500">Место для встроенного видео с Rutube, Dzen или YouTube</p>
+                <div className="aspect-video bg-gray-200 rounded-lg relative overflow-hidden group cursor-pointer">
+                  <img 
+                    src="/img/7d5d728d-cb71-4d3d-8a80-9abfafc750fe.jpg" 
+                    alt="Превью видео участка"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center group-hover:bg-opacity-50 transition-all">
+                    <div className="bg-white bg-opacity-90 rounded-full p-4 group-hover:scale-110 transition-transform">
+                      <Icon name="Play" size={48} className="text-[#2C5F41] ml-1" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <Button 
+                      onClick={() => window.open('https://rutube.ru/video/9f8f1b0aed16cc84e34db7e8d65ef80e/?r=plwd', '_blank')}
+                      className="w-full bg-[#2C5F41] hover:bg-[#1a3d2b] text-white"
+                    >
+                      <Icon name="ExternalLink" size={16} className="mr-2" />
+                      Смотреть на Rutube
+                    </Button>
                   </div>
                 </div>
               </Card>
